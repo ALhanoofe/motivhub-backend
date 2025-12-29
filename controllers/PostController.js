@@ -9,6 +9,15 @@ const GetPosts = async (req, res) => {
   }
 }
 
+const GetPostsByChannel = async (req, res) => {
+  try {
+    const posts = await Post.find({ channel: req.params.channelId })
+    res.status(200).send(posts)
+  } catch (error) {
+    res.status(500).send(error)
+  }
+}
+
 const CreatePost = async (req, res) => {
   try {
     const post = await Post.create(req.body)
@@ -40,6 +49,7 @@ const DeletePost = async (req, res) => {
 
 module.exports = {
   GetPosts,
+  GetPostsByChannel,
   CreatePost,
   UpdatePost,
   DeletePost
