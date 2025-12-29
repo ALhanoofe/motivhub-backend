@@ -9,6 +9,16 @@ const GetChannels = async (req, res) => {
   }
 }
 
+const GetChannelById = async (req, res) => {
+  try {
+
+    const channels = await Channel.findById(req.params.id)
+    res.status(200).send(channels)
+  } catch (error) {
+    throw error
+  }
+}
+
 const CreateChannel = async (req, res) => {
   try {
     const channel = await Channel.create(req.body)
@@ -43,6 +53,7 @@ const DeleteChannel = async (req, res) => {
 
 module.exports = {
   GetChannels,
+  GetChannelById,
   CreateChannel,
   UpdateChannel,
   DeleteChannel

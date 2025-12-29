@@ -3,7 +3,7 @@ const controller = require('../controllers/ChannelController')
 const middleware = require('../middleware')
 
 router.get('/', controller.GetChannels)
-
+router.get('/:id', controller.GetChannelById)
 router.post(
   '/',
   middleware.stripToken,

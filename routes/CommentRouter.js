@@ -2,7 +2,8 @@ const router = require('express').Router()
 const controller = require('../controllers/CommentController')
 const middleware = require('../middleware')
 
-router.get('/:postId', controller.GetComments)
+router.get('/', controller.GetComments)
+router.get('/post/:postId', controller.GetCommentsByPost)
 
 router.post(
   '/',

@@ -9,6 +9,15 @@ const GetComments = async (req, res) => {
   }
 }
 
+const GetCommentsByPost = async (req, res) => {
+  try {
+    const comments = await Comment.find({ post: req.params.postId })
+    res.status(200).send(comments)
+  } catch (error) {
+    res.status(500).send(error)
+  }
+}
+
 const CreateComment = async (req, res) => {
   try {
     const comment = await Comment.create(req.body)
@@ -42,6 +51,7 @@ const DeleteComment = async (req, res) => {
 
 module.exports = {
   GetComments,
+  GetCommentsByPost,
   CreateComment,
   UpdateComment,
   DeleteComment

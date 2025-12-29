@@ -3,6 +3,9 @@ const controller = require('../controllers/PostController')
 const middleware = require('../middleware')
 
 router.get('/', controller.GetPosts)
+
+router.get('/:id', controller.GetPostById)
+
 router.get('/channel/:channelId', controller.GetPostsByChannel)
 
 router.post(
