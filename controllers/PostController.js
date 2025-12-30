@@ -28,7 +28,12 @@ const GetPostsByChannel = async (req, res) => {
 
 const CreatePost = async (req, res) => {
   try {
-    const post = await Post.create(req.body)
+    const postData = {
+      ...req.body,
+      image: req.file ? `/uploads/${req.file.filename}` : ''
+    }
+
+    const post = await Post.create(postData)
     res.status(200).send(post)
   } catch (error) {
     throw error
