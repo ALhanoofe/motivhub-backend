@@ -50,8 +50,8 @@ Only authorized users can modify their own data.
 - https://www.figma.com/site/4Tuzg36tcn8dLm5cvchOJW/Untitled?node-id=0-1&t=Q3PUI9CPJJL15XGt-1
 
 ## Backend Deployed Link
-- [[https://www.figma.com/site/4Tuzg36tcn8dLm5cvchOJW/Untitled?node-id=0-1&t=Q3PUI9CPJJL15XGt-1](https://motivhub-frontend-tau.vercel.app)](https://motivhub-backend.onrender.com)
-
+- [[[https://www.figma.com/site/4Tuzg36tcn8dLm5cvchOJW/Untitled?node-id=0-1&t=Q3PUI9CPJJL15XGt-1](https://motivhub-frontend-tau.vercel.app)](https://motivhub-backend.onrender.com)
+](https://motivhub-backend.onrender.com)
 
 ## Figme link
 - https://www.figma.com/site/4Tuzg36tcn8dLm5cvchOJW/Untitled?node-id=0-1&t=Q3PUI9CPJJL15XGt-1
